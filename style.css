@@ -1,0 +1,145 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+html,body
+{
+    margin: 0;
+    padding: 0;
+    background: #50555a;
+}
+/* header */
+header
+{
+    width: 100%;
+    background: hsl(0, 0%, 20%);
+    height: 100px;
+}
+/* Logo Setting */
+.logo
+{
+    position: absolute;
+    left: 1%;
+    top: 3.5%;
+}
+a{
+    color: black;
+    font-size: 32px;
+}
+/* Button For Dark mode */
+.btn
+{
+    float: right;
+    padding: 2.5% 3% 0% 0%;
+}
+@media screen and (max-width: 500px) {
+    .btn
+    {
+        padding: 5% 5% 0% 0%;
+    }
+    header
+    {
+        width: 100%;
+        height: 70px;
+
+    }
+    .logo
+    {
+        position: absolute;
+        top: 3%;
+        left: 5%;
+    }
+    a{
+        font-size: 20px;
+    }
+}
+/* Clock Design */
+.clock_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.clock
+{
+    background: #333;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 40px;
+    position: relative;
+    /* box-shadow: 0 -15px 15px wheat,
+    inset   0 -15px 15px wheat,
+    0 -15px 15px white,
+    inset 0 -15px 15px white; */
+}
+.center
+{
+    background: wheat;
+    position: absolute;
+    top: 47%;
+    left: 48%;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.hour_container
+{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    left: 48.5%;
+    transform: rotate(270deg);
+}
+.hour
+{
+    background: wheat;
+    width: 5px;
+    height: 20%;
+    top: 30%;
+    left: 30%;
+    position: absolute;
+}
+.minute_container
+{
+    display: flex;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+}
+.minute
+{
+    width: 5px;
+    height: 35%;
+    background: wheat;
+    top: 15%;
+    position: absolute;
+}
+.second_container
+{
+    width: 1%;
+    height: 100%;
+    position: absolute;
+    left: 50%;    
+}
+.second
+{
+    background: red;
+    width: 1px;
+    height: 45%;
+    top: 5%;
+    position: absolute;
+    z-index: 0;
+}
+@keyframes hour
+{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(3600deg);}
+}
