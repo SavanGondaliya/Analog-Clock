@@ -19,27 +19,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>Digital Clock || Analog Watch</title>
   </head>
-  <body>
-    <header>
+  <body id="body">
+    <header id="header">
       <div class="logo">
-        <a href="https://www.github.com/SavanGondaliya/"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href="https://www.github.com/SavanGondaliya/" id="logo"><i class="fa-brands fa-github fa-2xl"></i></a>
       </div>
       <div class="btn">
-        <button>Dark Mode</button>
-        <button>Light Mode</button>
+        <button onclick="Dark_mode()">Dark Mode</button>
+        <button onclick="light_mode()">Light Mode</button>
       </div>
     </header>
     <main class="clock_container">
-      <section class="clock">
-        <div class="center"></div>
+      <section class="clock" id="clock">
+        <div class="center" id="center"></div>
         <div class="hour_container" id="hh">
-          <div class="hour"></div>
+          <div class="hour" id="hour"></div>
         </div>
         <div class="minute_container" id="mm">
-          <div class="minute"></div>
+          <div class="minute" id="minute"></div>
         </div>
         <div class="second_container" id="ss">
-          <div class="second"></div>
+          <div class="second" id="second"></div>
         </div>
       </section>
     </main>

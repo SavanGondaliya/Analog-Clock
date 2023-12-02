@@ -10,4 +10,23 @@ function Time()
     document.getElementById('ss').style.transform = `rotate(${second}deg)`;
 }
 setInterval(Time,1000)    
-// hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+
+function light_mode() {
+    document.getElementById("hour").style.background = "black";
+    document.getElementById("minute").style.background = "black";
+    document.getElementById("center").style.background = "black";
+    document.getElementById("second").style.background = "red";
+    document.getElementById("clock").style.background = "white";
+    document.getElementById("header").style.background = "white";
+    document.getElementById("body").style.background = "black";
+}
+function Dark_mode()
+{
+    document.getElementById("hour").style.background = "wheat";
+    document.getElementById("minute").style.background = "wheat";
+    document.getElementById("center").style.background = "wheat";
+    document.getElementById("second").style.background = "red";
+    document.getElementById("clock").style.background = "#333";
+    document.getElementById("header").style.background = "#333";
+    document.getElementById("body").style.background = "#50555a";
+}

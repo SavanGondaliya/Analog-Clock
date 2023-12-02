@@ -54,6 +54,18 @@ a{
         font-size: 20px;
     }
 }
+button
+{
+    color: white;
+    background: black;
+    font-weight: bolder;
+    border: 1px solid black;
+}
+button:active
+{
+    background: white;
+    color: black;
+}
 /* Clock Design */
 .clock_container
 {
