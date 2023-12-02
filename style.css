@@ -82,16 +82,12 @@ button:active
     border-radius: 50%;
     margin: 40px;
     position: relative;
-    /* box-shadow: 0 -15px 15px wheat,
-    inset   0 -15px 15px wheat,
-    0 -15px 15px white,
-    inset 0 -15px 15px white; */
 }
 .center
 {
     background: wheat;
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 48%;
     width: 5%;
     height: 5%;
@@ -154,4 +150,22 @@ button:active
     50%{transform: rotate(180deg);}
     75%{transform: rotate(270deg);}
     100%{transform: rotate(3600deg);}
+}
+/* number Image */
+img
+{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+/* Footer */
+footer
+{
+    text-align: center;
+    background: #333;    
+    padding: 1%;
+}
+footer a
+{
+    padding: 0px 0px 0px 2%;
 }
