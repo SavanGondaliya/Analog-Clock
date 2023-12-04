@@ -17,7 +17,6 @@ function light_mode() {
     document.getElementById("center").style.background = "black";
     document.getElementById("second").style.background = "red";
     document.getElementById("clock").style.background = "white";
-    // document.getElementById("header").style.background = "white";
     document.getElementById("body").style.background = "#dee2e6";
 }
 function Dark_mode()
