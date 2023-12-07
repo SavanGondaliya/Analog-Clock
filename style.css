@@ -112,6 +112,7 @@ button:active
     top: 30%;
     left: 30%;
     position: absolute;
+    border-radius: 20px;
 }
 .minute_container
 {
@@ -128,6 +129,7 @@ button:active
     background: wheat;
     top: 15%;
     position: absolute;
+    border-radius: 20px;
 }
 .second_container
 {
