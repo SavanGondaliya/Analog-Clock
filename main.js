@@ -1,3 +1,5 @@
+let darkMode=true;
+
 function Time()
 {
     let deg = 6;
@@ -12,20 +14,11 @@ function Time()
 setInterval(Time,1000)    
 
 function light_mode() {
-    document.getElementById("hour").style.background = "black";
-    document.getElementById("minute").style.background = "black";
-    document.getElementById("center").style.background = "black";
-    document.getElementById("second").style.background = "red";
-    document.getElementById("clock").style.background = "white";
-    document.getElementById("body").style.background = "#dee2e6";
-}
-function Dark_mode()
-{
-    document.getElementById("hour").style.background = "wheat";
-    document.getElementById("minute").style.background = "wheat";
-    document.getElementById("center").style.background = "wheat";
-    document.getElementById("second").style.background = "red";
-    document.getElementById("clock").style.background = "#333";
-    document.getElementById("header").style.background = "#333";
-    document.getElementById("body").style.background = "#50555a";
+    document.getElementById("hour").style.background = darkMode?"black":"wheat";
+    document.getElementById("minute").style.background = darkMode?"black":"wheat";
+    document.getElementById("center").style.background = darkMode?"black":"wheat";
+    document.getElementById("clock").style.background = darkMode?"white":"#333";
+    document.getElementById("body").style.background = darkMode?"#dee2e6":"#50555a";
+    document.getElementById("darkMode").innerHTML = darkMode?"Dark Mode":"Light Mode";
+    darkMode=!darkMode;
 }
