@@ -130,15 +130,9 @@ button:active
     background: wheat;
     top: 15%;
     position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
     border-radius: 5px;
-=======
     border-radius: 20px;
->>>>>>> e42658dd8093c41e85e14f2acaa57450d86b416f
-=======
     border-radius: 20px;
->>>>>>> e42658dd8093c41e85e14f2acaa57450d86b416f
 }
 .second_container
 {
