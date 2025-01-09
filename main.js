@@ -22,19 +22,3 @@ function light_mode() {
     document.getElementById("darkMode").innerHTML = darkMode?"Dark Mode":"Light Mode";
     darkMode=!darkMode;
 }
-
-const clockContainer = document.querySelector(".clock_container");
-
-document.addEventListener("DOMContentLoaded",() => {
-
-    const messageContainer = document.createElement("div");
-    messageContainer.classList.add("messageContainer");
-    clockContainer.appendChild(messageContainer);
-    document.body.style.filter = blur("10px");
-
-    messageContainer.innerHTML =`
-        <div>
-            <h3>We Are Coming With Something New in Few Days</h3>        
-        </div>
-    `
-})
